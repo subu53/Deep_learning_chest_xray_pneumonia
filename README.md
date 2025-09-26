@@ -1,70 +1,102 @@
-# Pneumonia Detection from Chest X-Rays 🩻🤖
-
-This project applies **deep learning with transfer learning** to detect **Pneumonia** in chest X-ray images.  
-It demonstrates a clear end-to-end workflow: dataset preparation, exploratory data analysis, model training, and evaluation.
+# 🩻 Pneumonia Detection from Chest X-Rays  
+Python | Deep Learning | Medical Imaging | Transfer Learning  
 
 ---
 
-## 📌 Motivation
-- Pneumonia is a serious lung infection where early detection is critical.
-- Chest X-rays are a common diagnostic tool, and deep learning can provide fast, accurate support to radiologists.
-- By leveraging **CNNs with transfer learning (ResNet)**, we can achieve state-of-the-art performance with minimal training time.
+## 🔍 Project Overview
+Pneumonia is a serious lung infection that requires early and accurate diagnosis.  
+This project leverages **deep learning with transfer learning (ResNet)** to classify chest X-ray images as **Pneumonia** or **Normal**.  
+
+The dataset used is the **Chest X-ray Pneumonia Dataset (Kaggle)**, containing over 5,000 labeled images.  
 
 ---
 
-## 📂 Project Structure
-pneumonia-detection/
-│── chest_xray_pneumonia.ipynb # Clean and well-documented notebook
-│── README.md
-│── requirements.txt
-
-
----
-
-## 🚀 Workflow
-1. **Data Preparation**
-   - Dataset: [Chest X-ray Pneumonia (Kaggle)](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
-   - Organized into `train/`, `val/`, `test/` folders.
-
-2. **Exploratory Data Analysis (EDA)**
-   - Visualized class distribution
-   - Displayed random chest X-ray samples
-
-3. **Model Training**
-   - Transfer learning with **ResNet34/ResNet50** using [FastAI](https://docs.fast.ai/).
-   - Applied data augmentation for stronger generalization.
-
-4. **Evaluation**
-   - Confusion matrix
-   - Accuracy, Precision, Recall, and F1-score
-   - Training/validation loss curves
-
-5. **Next Steps**
-   - Expand to larger and more diverse datasets
-   - Apply Grad-CAM or SHAP for interpretability
-   - Deploy as a simple web demo
+## ⚙️ Tech Stack & Tools
+- **Languages:** Python 🐍  
+- **Libraries:** FastAI, PyTorch, Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn, Pillow  
+- **Techniques:** Transfer Learning, CNNs, EDA, Data Augmentation  
+- **Deliverables:** Jupyter Notebook with analysis + performance evaluation  
 
 ---
 
-## 📊 Results — Highlights
-🔥 **Outstanding Accuracy**: Achieved **over 90% classification accuracy** on the test set.  
-📈 **ResNet34** proved to be the sweet spot, combining efficiency with high performance.  
-⏱️ **Fast training**: Transfer learning cut training time significantly compared to training from scratch.  
-✅ Clear separation between **Pneumonia vs. Normal** cases demonstrated by confusion matrix and precision/recall scores.  
+## 📈 Key Results
+✅ Best Model: **ResNet34 (transfer learning)**  
+🎯 Accuracy: **>90%** on test set  
+📊 Precision/Recall balance: High sensitivity for Pneumonia detection  
+⏱️ Training Efficiency: Transfer learning reduced training time significantly  
 
-These results show that deep learning can be a **powerful ally in medical imaging tasks**.
+The model demonstrated strong diagnostic performance, making it a promising candidate for medical imaging applications.  
 
 ---
 
-## 💻 How to Run
-### Option 1 — Google Colab
-1. Open the notebook in Colab.
-2. Enable GPU: *Runtime → Change runtime type → GPU*.
-3. Upload your `kaggle.json` to download the dataset automatically.
-4. Run cells in order.
+## 💡 Insights & Discussion
+**Model Performance**  
+- Transfer learning allowed high accuracy with fewer training epochs.  
+- ResNet34 balanced performance and efficiency better than deeper networks.  
 
-### Option 2 — Local Setup
+**Potential Applications**  
+- Clinical decision support system to assist radiologists.  
+- Screening tool in low-resource settings where medical staff are limited.  
+
+**Next Steps**  
+- Extend to larger, multi-hospital datasets for better generalization.  
+- Add interpretability (Grad-CAM/SHAP) to visualize decision-making.  
+- Deploy as a simple demo app for accessibility.  
+
+---
+
+## 🚀 How to Run
+Clone this repo:
 ```bash
-git clone https://github.com/yourusername/pneumonia-detection.git
+
+## 🚀 How to Run
+
+**1. Clone this repo**
+```bash
+git clone https://github.com/your-username/pneumonia-detection.git
 cd pneumonia-detection
+
+git clone https://github.com/your-username/pneumonia-detection.git
+cd pneumonia-detection
+2. Install requirements
+
 pip install -r requirements.txt
+
+
+3. Download dataset from Kaggle
+
+kaggle datasets download -d paultimothymooney/chest-xray-pneumonia -p ./data --unzip
+
+
+4. Run the notebook
+
+jupyter notebook chest_xray_pneumonia.ipynb
+
+
+Or open directly in Google Colab and enable GPU ⚡.
+
+🎯 Why This Project Matters
+
+This project demonstrates end-to-end machine learning workflow in a real-world healthcare context:
+
+Problem framing in the medical domain 🩺
+
+Data preparation & exploratory analysis 📊
+
+Deep learning with transfer learning 🤖
+
+Model evaluation & interpretation 🔍
+
+Discussion of real-world impact 💡
+
+👉 A strong example of applying AI to solve impactful problems in healthcare.
+
+👨‍💻 Author
+
+Sammy S Mutuku
+Aspiring Data Scientist & Machine Learning Enthusiast
+
+🔗 LinkedIn
+ | 📂 Portfolio
+
+⚡ If you found this project interesting, consider giving it a ⭐ on GitHub!
