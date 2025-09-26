@@ -45,6 +45,24 @@ The model demonstrated strong diagnostic performance, making it a promising cand
 
 ---
 
+## 🎯 Why This Project Matters
+
+This project demonstrates end-to-end machine learning workflow in a real-world healthcare context:
+
+* Problem framing in the medical domain 🩺
+
+* Data preparation & exploratory analysis 📊
+
+* Deep learning with transfer learning 🤖
+
+* Model evaluation & interpretation 🔍
+
+* Discussion of real-world impact 💡
+
+👉 A strong example of applying AI to solve impactful problems in healthcare.
+
+---
+
 ## 🚀 How to Run
 Clone this repo:
 ```bash
@@ -75,28 +93,11 @@ jupyter notebook chest_xray_pneumonia.ipynb
 
 Or open directly in Google Colab and enable GPU ⚡.
 
-🎯 Why This Project Matters
+------
 
-This project demonstrates end-to-end machine learning workflow in a real-world healthcare context:
-
-Problem framing in the medical domain 🩺
-
-Data preparation & exploratory analysis 📊
-
-Deep learning with transfer learning 🤖
-
-Model evaluation & interpretation 🔍
-
-Discussion of real-world impact 💡
-
-👉 A strong example of applying AI to solve impactful problems in healthcare.
-
-👨‍💻 Author
+## 👨‍💻 Author
 
 Sammy S Mutuku
 Aspiring Data Scientist & Machine Learning Enthusiast
-
-🔗 LinkedIn
- | 📂 Portfolio
 
 ⚡ If you found this project interesting, consider giving it a ⭐ on GitHub!
